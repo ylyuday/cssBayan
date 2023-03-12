@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bayan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="wrapper">
         <div class="bayan">
+            <h1>CSS Bayan</h1>
+            <hr>
             <div class="bayan-item">
-                <input class="bayan-item_input" type="radio" name="bayan" id="bayan-1">  
-                <label class="bayan-item_mem" for="bayan-1">
-                    ААА, мама! Тут зомби!
+                <input class="bayan-item__input" type="radio" name="bayan" id="bayan-1">
+                <label class="bayan-item__mem" for="bayan-1">
+                    <span class="text">ААА, мама! Тут зомби!</span>
                 </label>
-                <div class="bayan-item_content">
-                    <img src="./assets/mem1.jpg" alt="mem1">
-                </div>         
+                <div class="bayan-item__content">
+                    <img src="./assets/mem1.jpg" alt="mem1" width="190px">
+                </div>
             </div>
-        </div>
-        <div class="bayan">
+
             <div class="bayan-item">
-                <input class="bayan-item_input" type="radio" name="bayan" id="bayan-2">  
-                <label class="bayan-item_mem" for="bayan-2">
+                <input class="bayan-item__input" type="radio" name="bayan" id="bayan-2">
+                <label class="bayan-item__mem" for="bayan-2">
                     Леночка, ну сколько раз тебе повторять. Это не зомби...
                 </label>
-                <div class="bayan-item_content">
-                    <img src="./assets/mem2.jpg" alt="mem1">
-                </div>         
+                <div class="bayan-item__content">
+                    <img class="img2" src="./assets/mem2.jpg" alt="mem2" width="190px">
+                </div>
+            </div>
+
             <div class="bayan-item">
-                <input class="bayan-item_input" type="radio" name="bayan" id="bayan-3">  
-                <label class="bayan-item_mem" for="bayan-3">
+                <input class="bayan-item__input" type="radio" name="bayan" id="bayan-3">
+                <label class="bayan-item__mem" for="bayan-3">
                     Это твой брат-студент
                 </label>
-                <div class="bayan-item_content">
-                    <img src="./assets/mem3.jpg" alt="mem1">
-                </div>         
+                <div class="bayan-item__content">
+                    <img src="./assets/mem3.jpg" alt="mem3" width="190px">
+                </div>
             </div>
+
             <div class="bayan-item">
-                <input class="bayan-item_input" type="radio" name="bayan" id="bayan-4">  
-                <label class="bayan-item_mem" for="bayan-4">
+                <input class="bayan-item__input" type="radio" name="bayan" id="bayan-4">
+                <label class="bayan-item__mem" for="bayan-4">
                     У него сессия!
                 </label>
-                <div class="bayan-item_content">
-                    <img src="./assets/mem4.jpg" alt="mem1">
-                </div>         
+                <div class="bayan-item__content">
+                    <img src="./assets/mem4.jpg" alt="me4" width="190px">
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
