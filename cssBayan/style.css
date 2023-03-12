@@ -8,6 +8,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
     padding: 0;
+    cursor: pointer;
 }
 
 .wrapper {
@@ -15,11 +16,16 @@ body {
     margin: 0 auto;
     background-color: gainsboro;
 }
+.text {
+    text-align: start;
+}
 
 .bayan {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    align-items: center;    
+    
 }
 
 img {
@@ -28,24 +34,34 @@ img {
 }
 
 .img2 {
-    margin-left: 150px;
+    display: flex;
+    margin: 0 70px;
 }
 
 .bayan-item {
-    position: relative;
-    margin-bottom: 20px;
+    position: static;
+    margin: 20px 0;
 }
 
 .bayan-item__input {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: static;    
     opacity: 0;
+    transition: 0.5s;
 
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
 }
 
 .bayan-item__mem {
     display: block;
+    display: flex;
+    justify-content: space-between;
+    gap: 140px;
+    transition: 0.5s;     
     padding: 20px;
 }
 
@@ -54,8 +70,9 @@ img {
     display: none;
 }
 
+
 .bayan-item__input:checked~.bayan-item__mem {
-    transition-duration: 0.5s;
+    transition: 0.5s;
 
 }
 
